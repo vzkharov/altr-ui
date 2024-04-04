@@ -1,0 +1,5 @@
+{
+	"extends": "@altrui/tsconfig/default.json",
+	"include": ["src", "index.ts"],
+	"exclude": ["node_modules"]
+}

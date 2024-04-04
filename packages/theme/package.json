@@ -1,0 +1,42 @@
+{
+	"name": "@altrui/theme",
+	"version": "0.1.0",
+	"private": true,
+	"main": "index.ts",
+	"license": "MIT",
+	"scripts": {
+		"clean": "rm -rf .turbo node_modules",
+		"lint": "eslint .",
+		"format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@mertasan/tailwindcss-variables": "^2.7.0",
+		"autoprefixer": "^10.4.16",
+		"postcss": "8.4.30",
+		"tailwindcss": "3.3.2"
+	},
+	"devDependencies": {
+		"@altrui/tsconfig": "*",
+		"@types/mertasan__tailwindcss-variables": "^2.6.0",
+		"color2k": "^2.0.2",
+		"eslint": "^8.49.0",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	},
+	"exports": {
+		".": "./index.ts",
+		"./color": "./color.ts",
+		"./postcss": "./postcss.config.js"
+	},
+	"typesVersions": {
+		"*": {
+			".": [
+				"./index.ts"
+			],
+			"color": [
+				"./color.ts"
+			]
+		}
+	}
+}

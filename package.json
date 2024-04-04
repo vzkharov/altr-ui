@@ -1,0 +1,25 @@
+{
+	"name": "altrui",
+	"version": "1.0.0",
+	"license": "MIT",
+	"private": true,
+	"workspaces": [
+		"tooling/*",
+		"packages/*"
+	],
+	"scripts": {
+		"reset": "turbo run reset",
+		"build": "turbo run build",
+		"start": "turbo run start",
+		"dev": "turbo run dev --parallel",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"devDependencies": {
+		"prettier": "latest",
+		"turbo": "^1.12.3"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"packageManager": "bun@1.0.29"
+}

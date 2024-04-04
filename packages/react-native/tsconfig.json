@@ -1,0 +1,14 @@
+{
+	"extends": "@altrui/tsconfig/react.json",
+	"compilerOptions": {
+		"outDir": "lib",
+		"baseUrl": ".",
+		"noEmit": false,
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"types": ["nativewind/types"]
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "lib"]
+}

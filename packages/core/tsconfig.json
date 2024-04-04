@@ -1,0 +1,10 @@
+{
+	"extends": "@altrui/tsconfig/react.json",
+	"compilerOptions": {
+		"outDir": "lib",
+		"baseUrl": ".",
+		"noEmit": false
+	},
+	"include": ["hooks", "helpers", "icons", "utils"],
+	"exclude": ["node_modules", "lib"]
+}
